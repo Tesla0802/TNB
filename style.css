@@ -6,3 +6,11 @@
 body {
   background-color: #ffbe50;
 }
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ul-conatiner{
+    right: auto;
+}
