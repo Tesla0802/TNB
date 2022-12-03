@@ -14,6 +14,28 @@ body {
   background-color: #1d1d1d;
 }
 
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ul-conatiner {
+  right: auto;
+}
+.ul-container {
+  margin-left: auto;
+}
+.container-fluid {
+  padding: 0% 0% 0% 5%;
+}
+.navbar-collapse {
+  padding: 0% 5% 0% 0%;
+}
+
+.home {
+  padding: 0% 0% 0% 3%;
+}
+
 ul {
   list-style: none;
 }
