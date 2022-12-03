@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>INB</title>
     <link
 
       rel="stylesheet"
@@ -24,27 +24,41 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-   
-    <div class="main-div">
-      <!-- navbar -->
-      <nav class="navbar navbar-expand-lg bg-transparent navbar-conatiner">
-        <div class="container-fluid">
-          <img width="65px" height="40px" src="./inb-low-resolution-logo-color-on-transparent-background.png" alt="">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="nav-link active home" aria-current="page" href="#">Home</a>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav  ul-container">
-    
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link disabled">Disabled</a>
-            </div>
-          </div>
-        </div>
-      </nav>
+
+    <div id="progress">
+      <span id="progress-value"></span>
     </div>
+
+    <nav class="navigation">
+      <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label for="menu-btn" class="menu-icon">
+        <div class="nav-icon"></div>
+      </label>
+      <a href="./index.html" class="logo">INB</a>
+
+      <ul class="menu">
+        <li><a href="./index.html">Main</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">Animes</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Lists</a></li>
+        <li><a href="#">Trailers</a></li>
+        <li><a href="#">Franchises</a></li>
+      </ul>
+      <form action="" class="search-box">
+        <input
+          type="text"
+          name="search"
+          placeholder="Search Movie"
+          class="search-input"
+          required
+        />
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+    </nav>
+
     <main>
       <div class="bg"></div>
   <link rel="shortcut icon" href="./img/Logo.png" />
@@ -57,31 +71,6 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<div class="main-div">
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-lg bg-transparent">
-    <div class="container-fluid">
-      <img width="65px" height="40px" src="./inb-low-resolution-logo-color-on-transparent-background.png" alt="">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="nav-link active home" aria-current="page" href="#">Home</a>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav  ul-container">
-
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
-          <a class="nav-link disabled">Disabled</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-</div>
-
-
-
-
-
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
