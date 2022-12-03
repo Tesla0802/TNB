@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 * {
   margin: 0px;
   padding: 0px;
@@ -13,4 +14,21 @@ body {
 }
 .ul-conatiner{
     right: auto;
+=======
+.ul-container{
+    margin-left: auto;
+}
+.container-fluid{
+    padding: 0% 0% 0% 5%;
+}
+.navbar-collapse{
+    padding: 0% 5% 0% 0%;
+}
+.navbar{
+    background-color: rgb(255, 189, 7) !important;
+    
+}
+.home{
+    padding: 0% 0% 0% 3%;
+>>>>>>> Stashed changes
 }
