@@ -5,7 +5,10 @@
 }
 
 body {
-  background-color: #ffbe50;
+  background-image: url("./img/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .navbar{
     display: flex;
