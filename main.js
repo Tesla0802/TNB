@@ -81,4 +81,13 @@ function displayAlert(title, text, icon) {
     title: title,
   });
 }
+window.onscroll = function(){scrollFunction()};
+function scrollFunction(){
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 ) {
+    document.querySelector(".navbar navbar-expand-lg bg-transparent").style.padding="10px 20px";
+    document.querySelector(".navbar navbar-expand-lg bg-transparent").style.fontSize="25px";
+  }
+}
+
+
 
