@@ -1,14 +1,17 @@
 let FullName = document.querySelector(".inputone");
 let ProfileName = document.querySelector(".inputtwo");
 let ProfileLink = document.querySelector(".inputthree");
+let Mail = document.querySelector(".inputfive");
+let Contaction = document.querySelector(".inputsix");
 let imgSrc = document.querySelector(".inputfour");
 let BTN = document.querySelector("#BTN");
 BTN.addEventListener("click", () => {
-  console.log(FullName.value,ProfileLink.value,ProfileName.value)
   let fullname = FullName.value;
   let profilename = ProfileName.value;
     let profilelink = ProfileLink.value;
-    if(fullname == "" || profilename == "" || profilelink == "" ) {
+    let mail = Mail.value;
+    let contaction = Contaction.value;
+    if(fullname == "" || profilename == "" || profilelink == "" || mail == "" || contaction== "") {
         return;
     }
     let imgSrc = "";
@@ -21,6 +24,8 @@ BTN.addEventListener("click", () => {
             Fullname : FullName.value,
             Profilename: ProfileName.value,
             Profilelink: ProfileLink.value,
+            Mail : Mail.value,
+            Contaction:Contaction.value,
             imgSrc: imgSrc,
             uploadTime: new Date().toLocaleString(),
           });
@@ -32,6 +37,8 @@ BTN.addEventListener("click", () => {
             Fullname : FullName.value,
             Profilename: ProfileName.value,
             Profilelink: ProfileLink.value,
+            Mail : Mail.value,
+            Contaction:Contaction.value,
             imgSrc: imgSrc,
             uploadTime: new Date().toLocaleString(),
         });

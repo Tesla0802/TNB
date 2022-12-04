@@ -174,8 +174,8 @@ body {
   transition: all ease 0.3s;
 }
 
-.menu li a:hover {
-  font-size: 2.5rem;
+.menu li a {
+  font-size: 20px;
   color: #ffbe79;
   transition: all ease 0.3s;
 }
@@ -412,7 +412,7 @@ main .card {
 
 main .register {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 400px;
   padding: 110px;
   color: white;
 }
@@ -575,4 +575,5 @@ li .white :hover {
 a {
   color: white;
 }
+
 
