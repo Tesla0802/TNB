@@ -13,6 +13,13 @@ body {
   font-family: "Shojumaru", cursive;
   background-color: #fdfffd;
 }
+.register{
+  margin: 1% 0% 0% 0% !important;
+
+}
+.btn-submit2{
+
+}
 .main-div{
   width: 100%;
   height: 600px;
