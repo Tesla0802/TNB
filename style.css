@@ -452,3 +452,12 @@ main .register .bottom {
 .log {
   margin: 3% 0%;
 }
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 1170px;
+  width: 100%;
+}
