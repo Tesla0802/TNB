@@ -33,6 +33,7 @@ body {
   justify-content: center;
   align-items: center;
   position: fixed;
+  z-index: 1;
 }
 .ul-conatiner {
   right: auto;
@@ -88,6 +89,7 @@ body {
   width: 100%;
   position: fixed;
   opacity: 0.6;
+  z-index: 1;
 }
 
 .navigation .logo {
@@ -406,6 +408,7 @@ main {
 main .card {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 main .register {
@@ -562,7 +565,7 @@ li a:hover {
   color: #51b4fc !important;
 }
 .blue:hover {
-  color: white;
+  color: white !important;
   font-size: 20px;
   transition: 0.6s;
 }
