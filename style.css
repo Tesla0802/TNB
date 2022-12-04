@@ -409,3 +409,20 @@ main .register .bottom {
   display: flex;
   justify-content: center;
 }
+/* sign up style */
+.sign-up-btn{
+  background-color: transparent !important;
+  border:  none !important;
+}
+.sign-up-btn:hover{
+  border:  none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.sign-up-btn:focus{
+   border:  none !important;
+   outline: none !important;
+   box-shadow: none !important;
+   color: none;
+}
+
