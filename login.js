@@ -1,13 +1,14 @@
-let emailInput1 = document.querySelector("#Email");
-let Password = document.querySelector("#password");
-const userArray = getArrayFromFirebase("User");
-let BTN = document.querySelector("#submitButton");
-BTN.addEventListener("click", () => {
+const emailInput1 = document.querySelector("#email");
+const passwordInput1 = document.querySelector("#password");
+const submitButton1 = document.querySelector("#submitButton");
+const userArray1 = getArrayFromFirebase("User");
+
+submitButton1.addEventListener("click", () => {
   let email = emailInput1.value;
-  let password = Password.value;
+  let password = passwordInput1.value;
   let currentUser = {};
   let successAuth = false;
-  userArray.forEach((element) => {
+  userArray1.forEach((element) => {
     if (element.data.email === email && element.data.password === password) {
       successAuth = true;
       currentUser = element;

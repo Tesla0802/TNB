@@ -1,32 +1,33 @@
-let Name = document.querySelector("#name");
-let LastName = document.querySelector("#lastname");
-let emailInput = document.querySelector("#email");
-let password1 = document.querySelector("#password")
-let Btn = document.querySelector("#submitButton")
-const userArray = getArrayFromFirebase("User");
+const nameInput = document.querySelector("#name");
+const lastnameInput = document.querySelector("#lastname");
+const emailInput = document.querySelector("#email");
+const passwordInput = document.querySelector("#password");
+const submitButton = document.querySelector("#submitButton");
+const userArray= getArrayFromFirebase("User");
 
-Btn.addEventListener("click", () => {
-    let name = Name.value;
-    let last_name = LastName.value;
-    let emailInput = email.value;
-    let password = password1.value;
-    if (name == "" || last_name == "" || emailInput == "" || password == "") return;
-    let alreadyUsedEmail = false;
-    userArray.forEach((element) => {
-      if (element.data.email === email) {
-        alreadyUsedEmail = true;
-        return;
-      }
-    });
-    if (alreadyUsedEmail) {
-      displayAlert("შეცდომა", "უკვე არსებობს ესეთი იმეილი", "info");
+submitButton.addEventListener("click", () => {
+  let name = nameInput.value;
+  let last_name = lastnameInput.value;
+  let email = emailInput.value;
+  let password = passwordInput.value;
+  if (name == "" || last_name == "" || email == "" || password == ""  ) return;
+  let alreadyUsedEmail = false;
+  userArray.forEach((element) => {
+    if (element.data.email === email) {
+      alreadyUsedEmail = true;
       return;
     }
-    addElementInFirebase("User/", {
-      name: name,
-      last_name: last_name,
-      email: emailInput,
-      password: password,
-    });
-    displayAlert("შესრულდა", "წარმატებით დაემატა მომხარებელი", "success");
   });
+
+  if (alreadyUsedEmail) {
+    displayAlert("შეცდომა", "უკვე არსებობს ესეთი იმეილი", "info");
+    return;
+  }
+  addElementInFirebase("User/", {
+    name: name,
+    last_name: last_name,
+    email: email,
+    password: password,
+    });
+  displayAlert("შესრულდა", "წარმატებით დაემატა მომხარებელი", "success");
+});
