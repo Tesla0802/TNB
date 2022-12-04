@@ -465,15 +465,23 @@ main .register .bottom {
   width: 100%;
 }
 .inputbox {
-  width: 500px;
+  width: 20rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   color: #ffffff;
   padding: 62px 10px 0px 14px;
-  margin-top: 30px;
+  margin-top: 4.5rem;
+}
+.inputbox .title {
+  font-size: 2rem;
+  text-align: center;
 }
 
+.inputbox input {
+  height: 2rem;
+  border-radius: 0.48rem;
+}
 
 .upload-your-hotel input .btn {
   width: 50%;
@@ -483,10 +491,11 @@ main .register .bottom {
 }
 
 main .inputbox button {
-  width: 50%;
+  width: 13.8rem;
   height: 100%;
-  box-shadow: 3px 1px 20px 10px rgba(255, 255, 255, 0.4);
-  border: 0px;
+  background-color: #0158b5;
+  border-radius: 2rem;
+  border: none;
 }
 .inputfour {
   margin-top: 15px;
@@ -545,11 +554,11 @@ li {
   padding: 0px 20px 0px 0px;
 }
 li a:hover {
-font-size: 20px;
-transition: 0.6s;
-color: #51b4fc;
+  font-size: 20px;
+  transition: 0.6s;
+  color: #51b4fc;
 }
-.blue  {
+.blue {
   color: #51b4fc !important;
 }
 .blue:hover {
