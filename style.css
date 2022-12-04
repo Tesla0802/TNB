@@ -425,4 +425,10 @@ main .register .bottom {
    box-shadow: none !important;
    color: none;
 }
-
+.navigation li a{
+  color: #fdfffd;
+}
+.btn-submit{
+  background-color: #1d1d1d !important;
+  color: #fdfffd ;
+}
