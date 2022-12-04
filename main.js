@@ -1,40 +1,4 @@
 
-let scrollPrecentage = () => {
-  let scrollProgress = document.getElementById("progress");
-  let progressValue = document.getElementById("progress-value");
-  let pos = document.documentElement.scrollTop;
-  let calcHeight =
-    document.documentElement.scrollHeight -
-    document.documentElement.clientHeight;
-  let scrollValue = Math.round((pos * 100) / calcHeight);
-  scrollProgress.style.background = `conic-gradient(#009c7c ${scrollValue}%, #2b2f38 ${scrollValue}%)`;
-};
-window.onscroll = scrollPrecentage;
-window.onload = scrollPrecentage;
-
-$(window).scroll(function () {
-  if ($(document).scrollTop() > 20) {
-    $(".navigation").addClass("fix-icon");
-  } else {
-    $(".navigation").removeClass("fix-icon");
-  }
-});
-
-$(document).on("click", ".play-btn a", function () {
-  $(".play").addClass("active-popup");
-});
-
-$(document).on("click", ".close-movie", function () {
-  $(".play").removeClass("active-popup");
-});
-
-$(".play-btn a").click(function () {
-  $("#m-video")[0].play();
-});
-
-$(".close-movie").click(function () {
-  $("#m-video")[0].pause();
-});
 
 // var swiper = new Swiper(".mySwiper", {
 //   slidesPerView: 1,
@@ -81,13 +45,17 @@ function displayAlert(title, text, icon) {
     title: title,
   });
 }
-window.onscroll = function(){scrollFunction()};
-function scrollFunction(){
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 ) {
-    document.querySelector(".navbar navbar-expand-lg bg-transparent").style.padding="10px 20px";
-    document.querySelector(".navbar navbar-expand-lg bg-transparent").style.fontSize="25px";
+let Display = document.querySelector(".none")
+console.log(Display)
+let   GETARRAY = getArrayFromFirebase("User");
+console.log(GETARRAY)
+
+GETARRAY.forEach((element)  => {
+  if(element.data.radio == "Influencer"){
+    Display.style.display = "flex";
   }
-}
+});
+
 
 
 
