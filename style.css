@@ -17,19 +17,16 @@ body {
   margin: 1% 0% 0% 0% !important;
 }
 
-
-
 .main-div {
-
   width: 100%;
-  height: 800px;
-  background-image:url(./Untitled.png);
+  height: 600px;
+  background-image: url(./Untitled.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .navigation {
-  background-color: #1d1d1d81;
+  background-color: #1d1d1d;
 }
 .navbar {
   display: flex;
@@ -413,7 +410,6 @@ main .register {
   row-gap: 20px;
   padding: 20px;
   color: white;
-
 }
 
 main .register .top h3 {
@@ -445,53 +441,23 @@ main .register .bottom {
   box-shadow: none !important;
   color: none;
 }
-li{
- list-style: none;
- padding: 0px 15px 0px;
-}
 
 .navigation li a {
   color: #fdfffd;
 }
 .btn-submit {
   background-color: #1d1d1d !important;
-  color: #fdfffd ;
-}
-.inputbox {
-  gap: 5px;
-}
-
-.btn {
-  border: none;
-}
-.inputbox {
-  width: 500px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  color: #ffffff;
-  padding: 62px 10px 0px 14px;
-  margin-top: 30px;
-}
-
-input .btn {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-main .inputbox button {
-  width: 50%;
-  height: 100%;
-  box-shadow: inset -6px -5px 17px 2px #1d1d1d;
-  border: 0px;
-}
-label {
-  color: black;
-
   color: #fdfffd;
 }
-.log{
+.log {
   margin: 3% 0%;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 1170px;
+  width: 100%;
 }
