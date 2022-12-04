@@ -374,3 +374,38 @@ body {
   font-weight: 800;
   color: #009c7c;
 }
+main {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  row-gap: 20px;
+}
+
+main .card {
+  display: flex;
+  justify-content: center;
+}
+
+main .register {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
+  color: #000000;
+  margin-top: 100px;
+}
+
+main .register .top h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
+main .register .bottom {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
