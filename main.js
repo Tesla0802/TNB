@@ -1,3 +1,4 @@
+
 let scrollPrecentage = () => {
   let scrollProgress = document.getElementById("progress");
   let progressValue = document.getElementById("progress-value");
@@ -72,3 +73,21 @@ $(window).scroll(function () {
     $(".navigation").removeClass("fix-icon");
   }
 });
+window.onscroll = function(){scrollFunction()};
+function scrollFunction(){
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+    document.getElementById("navbar").style.backgroundColor = "black";
+  }
+  else{
+    document.getElementById("navbar").style.backgroundColor = "#6a6a6a";
+  }
+}
+
+function displayAlert(title, text, icon) {
+  Swal.fire({
+    icon: icon,
+    text: text,
+    title: title,
+  });
+}
+
