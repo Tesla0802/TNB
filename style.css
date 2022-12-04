@@ -20,7 +20,10 @@ body {
 .main-div {
   width: 100%;
   height: 600px;
-  background-color: #0158b5;
+  background-image:url(./Untitled.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .navigation {
   background-color: #1d1d1d;
@@ -406,9 +409,8 @@ main .register {
   grid-template-columns: 1fr;
   row-gap: 20px;
   padding: 20px;
-  box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
-  color: #000000;
-  margin-top: 100px;
+  color: white;
+
 }
 
 main .register .top h3 {
@@ -447,4 +449,7 @@ main .register .bottom {
 .btn-submit {
   background-color: #1d1d1d !important;
   color: #fdfffd;
+}
+.log{
+  margin: 3% 0%;
 }
