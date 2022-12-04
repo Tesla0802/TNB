@@ -35,6 +35,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed; 
 }
 .ul-conatiner {
   right: auto;
@@ -84,9 +85,10 @@ body {
   justify-content: center;
   align-items: center;
   padding: 30px 50px;
-  max-width: 1400px;
+  max-width: 100%;
   margin: auto;
   width: 100%;
+  position: fixed; 
 }
 
 .navigation .logo {
