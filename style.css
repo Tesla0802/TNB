@@ -455,6 +455,41 @@ li{
 }
 .btn-submit {
   background-color: #1d1d1d !important;
+  color: #fdfffd ;
+}
+.inputbox {
+  gap: 5px;
+}
+
+.btn {
+  border: none;
+}
+.inputbox {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+  padding: 62px 10px 0px 14px;
+  margin-top: 30px;
+}
+
+input .btn {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+main .inputbox button {
+  width: 50%;
+  height: 100%;
+  box-shadow: inset -6px -5px 17px 2px #1d1d1d;
+  border: 0px;
+}
+label {
+  color: black;
+
   color: #fdfffd;
 }
 .log{
