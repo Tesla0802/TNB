@@ -12,7 +12,13 @@ submitButton.addEventListener("click", () => {
   let email = emailInput.value;
   let password = passwordInput.value;
   let radio = RAdio.value;
-  if (name == "" || last_name == "" || email == "" || password == "" || radio == "" || radio == "") return;
+  if (
+    name == "" ||
+    last_name == "" ||
+    email == "" ||
+    password == "" || radio == "" || radio == ""
+  )
+    return;
   let alreadyUsedEmail = false;
   userArray.forEach((element) => {
     if (element.data.email === email) {
@@ -20,12 +26,12 @@ submitButton.addEventListener("click", () => {
       return;
     }
   });
-  let Radio = false
-  if(RAdio.value == "Brand" ){
+  let Radio = false;
+  if (RAdio.value == "Brand") {
     Radio = true;
-  }else if(RAdio.value == "Influencer"){
+  } else if (RAdio.value == "Influencer") {
     Radio = true;
-  }else {
+  } else {
     Radio = false;
   }
 
@@ -39,10 +45,10 @@ submitButton.addEventListener("click", () => {
     email: email,
     password: password,
     Status: Radio,
-    radio : RAdio.value,
+    radio: RAdio.value,
   });
   displayAlert("შესრულდა", "წარმატებით დაემატა მომხარებელი", "success");
-setTimeout(() => {
-  location.href= "login.html"
-},1500 )
+  setTimeout(() => {
+    location.href = "login.html";
+  }, 1500);
 });

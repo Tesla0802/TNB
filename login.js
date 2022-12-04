@@ -4,6 +4,7 @@ const submitButton = document.querySelector("#submitButton");
 
 
 const userArray = getArrayFromFirebase("User");
+let Display = document.querySelector(".none");
 
 submitButton.addEventListener("click", () => {
   let email = emailInput.value;
@@ -15,6 +16,9 @@ submitButton.addEventListener("click", () => {
       successAuth = true;
       currentUser = element;
       return;
+    }
+    if(element.data.radio == "Influencer") {
+      Display.style.display = "flex" 
     }
   });
   if (!successAuth) {
