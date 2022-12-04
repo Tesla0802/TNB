@@ -13,11 +13,14 @@ body {
   font-family: "Shojumaru", cursive;
   background-color: #fdfffd;
 }
-.register{
+.register {
   margin: 1% 0% 0% 0% !important;
-
 }
-.main-div{
+
+
+
+.main-div {
+
   width: 100%;
   height: 800px;
   background-image:url(./Untitled.png);
@@ -25,15 +28,13 @@ body {
   background-size: cover;
   background-position: center;
 }
-.navigation{
+.navigation {
   background-color: #1d1d1d;
-  
 }
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .ul-conatiner {
   right: auto;
@@ -86,6 +87,10 @@ body {
   max-width: 1400px;
   margin: auto;
   width: 100%;
+}
+
+.navigation .logo {
+  width: 2.5rem;
 }
 
 .navigation .menu-icon {
@@ -185,7 +190,6 @@ body {
     opacity: 1;
   }
 }
-
 
 .logo {
   color: #ffbe79;
@@ -426,27 +430,28 @@ main .register .bottom {
   justify-content: center;
 }
 /* sign up style */
-.sign-up-btn{
+.sign-up-btn {
   background-color: transparent !important;
-  border:  none !important;
+  border: none !important;
 }
-.sign-up-btn:hover{
-  border:  none !important;
+.sign-up-btn:hover {
+  border: none !important;
   outline: none !important;
   box-shadow: none !important;
 }
-.sign-up-btn:focus{
-   border:  none !important;
-   outline: none !important;
-   box-shadow: none !important;
-   color: none;
+.sign-up-btn:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  color: none;
 }
-.navigation li a{
+
+.navigation li a {
   color: #fdfffd;
 }
-.btn-submit{
+.btn-submit {
   background-color: #1d1d1d !important;
-  color: #fdfffd ;
+  color: #fdfffd;
 }
 .log{
   margin: 3% 0%;
