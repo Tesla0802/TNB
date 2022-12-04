@@ -13,20 +13,28 @@ body {
   font-family: "Shojumaru", cursive;
   background-color: #fdfffd;
 }
-.main-div{
-  width: 100%;
-  height: 600px;
-  background-color: #0158b5;
+.register {
+  margin: 1% 0% 0% 0% !important;
 }
-.navigation{
-  background-color: #1d1d1d;
-  
+
+
+
+.main-div {
+
+  width: 100%;
+  height: 800px;
+  background-image:url(./Untitled.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.navigation {
+  background-color: #1d1d1d81;
 }
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .ul-conatiner {
   right: auto;
@@ -79,6 +87,10 @@ body {
   max-width: 1400px;
   margin: auto;
   width: 100%;
+}
+
+.navigation .logo {
+  width: 2.5rem;
 }
 
 .navigation .menu-icon {
@@ -400,9 +412,8 @@ main .register {
   grid-template-columns: 1fr;
   row-gap: 20px;
   padding: 20px;
-  box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
-  color: #000000;
-  margin-top: 100px;
+  color: white;
+
 }
 
 main .register .top h3 {
@@ -419,25 +430,30 @@ main .register .bottom {
   justify-content: center;
 }
 /* sign up style */
-.sign-up-btn{
+.sign-up-btn {
   background-color: transparent !important;
-  border:  none !important;
+  border: none !important;
 }
-.sign-up-btn:hover{
-  border:  none !important;
+.sign-up-btn:hover {
+  border: none !important;
   outline: none !important;
   box-shadow: none !important;
 }
-.sign-up-btn:focus{
-   border:  none !important;
-   outline: none !important;
-   box-shadow: none !important;
-   color: none;
+.sign-up-btn:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  color: none;
 }
-.navigation li a{
+li{
+ list-style: none;
+ padding: 0px 15px 0px;
+}
+
+.navigation li a {
   color: #fdfffd;
 }
-.btn-submit{
+.btn-submit {
   background-color: #1d1d1d !important;
   color: #fdfffd ;
 }
@@ -473,4 +489,9 @@ main .inputbox button {
 }
 label {
   color: black;
+
+  color: #fdfffd;
+}
+.log{
+  margin: 3% 0%;
 }
