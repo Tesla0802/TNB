@@ -72,3 +72,12 @@ $(window).scroll(function () {
     $(".navigation").removeClass("fix-icon");
   }
 });
+window.onscroll = function(){scrollFunction()};
+function scrollFunction(){
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+    document.getElementById("navbar").style.backgroundColor = "black";
+  }
+  else{
+    document.getElementById("navbar").style.backgroundColor = "#6a6a6a";
+  }
+}
