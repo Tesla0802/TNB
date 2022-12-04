@@ -1,14 +1,15 @@
-const emailInput1 = document.querySelector("#email");
-const passwordInput1 = document.querySelector("#password");
-const submitButton1 = document.querySelector("#submitButton");
-const userArray1 = getArrayFromFirebase("User");
+const emailInput = document.querySelector("#email");
+const passwordInput = document.querySelector("#password");
+const submitButton = document.querySelector("#submitButton");
 
-submitButton1.addEventListener("click", () => {
-  let email = emailInput1.value;
-  let password = passwordInput1.value;
+const userArray = getArrayFromFirebase("User");
+
+submitButton.addEventListener("click", () => {
+  let email = emailInput.value;
+  let password = passwordInput.value;
   let currentUser = {};
   let successAuth = false;
-  userArray1.forEach((element) => {
+  userArray.forEach((element) => {
     if (element.data.email === email && element.data.password === password) {
       successAuth = true;
       currentUser = element;
@@ -21,4 +22,7 @@ submitButton1.addEventListener("click", () => {
   }
   displayAlert("შესრულდა", "წარმატებით დაემატა გაიარეთ ავტორიზაცია", "success");
   localStorage.setItem("userid", currentUser.userid);
+  setTimeout(() => {
+    location.href = "index.html";
+  }, 1000);
 });
