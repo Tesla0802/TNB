@@ -2,6 +2,7 @@ const nameInput = document.querySelector("#name");
 const lastnameInput = document.querySelector("#lastname");
 const emailInput = document.querySelector("#email");
 const passwordInput = document.querySelector("#password");
+const Radio = document.querySelector(".radio");
 const submitButton = document.querySelector("#submitButton");
 
 const userArray = getArrayFromFirebase("User");
@@ -11,7 +12,8 @@ submitButton.addEventListener("click", () => {
   let last_name = lastnameInput.value;
   let email = emailInput.value;
   let password = passwordInput.value;
-  if (name == "" || last_name == "" || email == "" || password == "") return;
+  let radio = RADIO.value;
+  if (name == "" || last_name == "" || email == "" || password == "" || radio == "") return;
   let alreadyUsedEmail = false;
   userArray.forEach((element) => {
     if (element.data.email === email) {

@@ -87,6 +87,7 @@ body {
   margin: auto;
   width: 100%;
   position: fixed;
+  opacity: 0.6;
 }
 
 .navigation .logo {
@@ -410,8 +411,7 @@ main .card {
 main .register {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 20px;
-  padding: 20px;
+  padding: 110px;
   color: white;
 }
 
@@ -539,4 +539,24 @@ body::-webkit-scrollbar {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+li {
+  list-style: none;
+  padding: 0px 20px 0px 0px;
+}
+li a:hover {
+font-size: 20px;
+transition: 0.6s;
+color: #51b4fc;
+}
+.blue  {
+  color: #51b4fc !important;
+}
+.blue:hover {
+  color: white;
+  font-size: 20px;
+  transition: 0.6s;
+}
+.choose {
+  margin-top: 18px;
 }
