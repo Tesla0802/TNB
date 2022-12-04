@@ -11,9 +11,21 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: "Shojumaru", cursive;
+  background-color: #fdfffd;
+}
+.register {
+  margin: 1% 0% 0% 0% !important;
+}
+.btn-submit2 {
+}
+.main-div {
+  width: 100%;
+  height: 600px;
+  background-color: #0158b5;
+}
+.navigation {
   background-color: #1d1d1d;
 }
-
 .navbar {
   display: flex;
   justify-content: center;
@@ -428,4 +440,12 @@ main .register .bottom {
   outline: none !important;
   box-shadow: none !important;
   color: none;
+}
+
+.navigation li a {
+  color: #fdfffd;
+}
+.btn-submit {
+  background-color: #1d1d1d !important;
+  color: #fdfffd;
 }
