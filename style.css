@@ -72,6 +72,10 @@ body {
   width: 100%;
 }
 
+.navigation .logo {
+  width: 2.5rem;
+}
+
 .navigation .menu-icon {
   cursor: pointer;
   float: right;
@@ -410,19 +414,18 @@ main .register .bottom {
   justify-content: center;
 }
 /* sign up style */
-.sign-up-btn{
+.sign-up-btn {
   background-color: transparent !important;
-  border:  none !important;
+  border: none !important;
 }
-.sign-up-btn:hover{
-  border:  none !important;
+.sign-up-btn:hover {
+  border: none !important;
   outline: none !important;
   box-shadow: none !important;
 }
-.sign-up-btn:focus{
-   border:  none !important;
-   outline: none !important;
-   box-shadow: none !important;
-   color: none;
+.sign-up-btn:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  color: none;
 }
-
