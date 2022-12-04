@@ -1,3 +1,4 @@
+
 let scrollPrecentage = () => {
   let scrollProgress = document.getElementById("progress");
   let progressValue = document.getElementById("progress-value");
@@ -81,3 +82,12 @@ function scrollFunction(){
     document.getElementById("navbar").style.backgroundColor = "#6a6a6a";
   }
 }
+
+function displayAlert(title, text, icon) {
+  Swal.fire({
+    icon: icon,
+    text: text,
+    title: title,
+  });
+}
+
