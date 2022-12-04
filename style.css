@@ -29,7 +29,7 @@ body {
   background-position: center;
 }
 .navigation {
-  background-color: #1d1d1d;
+  background-color: #1d1d1d81;
 }
 .navbar {
   display: flex;
@@ -444,6 +444,10 @@ main .register .bottom {
   outline: none !important;
   box-shadow: none !important;
   color: none;
+}
+li{
+ list-style: none;
+ padding: 0px 15px 0px;
 }
 
 .navigation li a {
