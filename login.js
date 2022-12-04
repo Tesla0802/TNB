@@ -1,5 +1,7 @@
-let email = document.querySelector("#email");
-let password = document.querySelector("#password");
+const emailInput = document.querySelector("#email");
+const passwordInput = document.querySelector("#password");
+const submitButton = document.querySelector("#submitButton");
+
 const userArray = getArrayFromFirebase("User");
 
 submitButton.addEventListener("click", () => {
