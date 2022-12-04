@@ -2,9 +2,9 @@ let FullName = document.querySelector(".inputone");
 let ProfileName = document.querySelector(".inputtwo");
 let ProfileLink = document.querySelector(".inputthree");
 let imgSrc = document.querySelector(".inputfour");
-let Btn = document.querySelector(".Btn");
+let BTN = document.querySelector(".Btn");
 
-Btn.addEventListener("click", () => {
+BTN.addEventListener("click", () => {
     let fullname = FullName.value;
     let profilename = ProfileName.value;
     let profilelink = ProfileLink.value;

@@ -2,7 +2,9 @@ const emailInput = document.querySelector("#email");
 const passwordInput = document.querySelector("#password");
 const submitButton = document.querySelector("#submitButton");
 
+
 const userArray = getArrayFromFirebase("User");
+// let Display = document.querySelector(".none");
 
 submitButton.addEventListener("click", () => {
   let email = emailInput.value;
@@ -15,6 +17,9 @@ submitButton.addEventListener("click", () => {
       currentUser = element;
       return;
     }
+    // if(element.data.radio == "Influencer") {
+    //   Display.style.display = "flex" 
+    // }
   });
   if (!successAuth) {
     displayAlert("შეცდომა", "არ არსებობს მომხარებელი", "info");
