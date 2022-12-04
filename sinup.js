@@ -3,6 +3,7 @@ let LastName = document.querySelector("#lastname");
 let emailInput = document.querySelector("#email");
 let password1 = document.querySelector("#password")
 let Btn = document.querySelector("#submitButton")
+const userArray = getArrayFromFirebase("User");
 
 Btn.addEventListener("click", () => {
     let name = Name.value;
