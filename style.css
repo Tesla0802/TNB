@@ -425,4 +425,9 @@ main .register .bottom {
    box-shadow: none !important;
    color: none;
 }
-
+.navigation li a{
+  color: #fdfffd;
+}
+.fs-5{
+  color: ;
+}
