@@ -19,8 +19,8 @@ Btn.addEventListener("click", () => {
           imgSrc = reader.result;
           addElementInFirebase("Card/", {
             Fullname : FullName.value,
-            Profilename: ProfileName,
-            Profilelink: ProfileLink,
+            Profilename: ProfileName.value,
+            Profilelink: ProfileLink.value,
             imgSrc: imgSrc,
             uploadTime: new Date().toLocaleString(),
           });
@@ -30,8 +30,8 @@ Btn.addEventListener("click", () => {
           "https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-6.png";
         addElementInFirebase("Card/", {
             Fullname : FullName.value,
-            Profilename: ProfileName,
-            Profilelink: ProfileLink,
+            Profilename: ProfileName.value,
+            Profilelink: ProfileLink.value,
             imgSrc: imgSrc,
             uploadTime: new Date().toLocaleString(),
         });
