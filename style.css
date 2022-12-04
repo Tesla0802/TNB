@@ -428,6 +428,7 @@ main .register .bottom {
 .navigation li a{
   color: #fdfffd;
 }
-.fs-5{
-  color: ;
+.btn-submit{
+  background-color: #1d1d1d !important;
+  color: #fdfffd ;
 }
