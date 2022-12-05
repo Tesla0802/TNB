@@ -11,10 +11,14 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: "Shojumaru", cursive;
-  background-color: #fdfffd;
+  background-color: #1d1d1d;
 }
 .register {
   margin: 1% 0% 0% 0% !important;
+}
+
+main{
+  background-color: #fdfffd;
 }
 
 .main-div {
@@ -28,6 +32,12 @@ body {
 .navigation {
   background-color: #1d1d1d;
 }
+
+.main-div .navigation li{
+  list-style: none;
+  padding: 0px 15px 0px;
+}
+
 .navbar {
   display: flex;
   justify-content: center;
